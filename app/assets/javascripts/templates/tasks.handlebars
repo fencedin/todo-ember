@@ -1,13 +1,17 @@
-<h1>Tasks</h1>
-
-<ul>
-  {{#each task in controller itemController='task'}}
-    <li>{{#link-to 'task' task}}{{task.name}}{{/link-to}}
-      <button {{action deleteTask}}class="btn btn-danger btn-xs">Delete</button>
-
-    </li>
-  {{/each}}
-
-</ul>
-
-{{#link-to 'new_task'}}New task{{/link-to}}
+<div class="col-md-8">
+  <h1>Tasks</h1>
+  <ul>
+    {{#each task in controller itemController='task'}}
+      <li>{{#link-to 'task' task}}{{task.name}}{{/link-to}}
+        <button {{action deleteTask}}
+                  class="btn btn-danger btn-xs">
+                  Delete
+        </button>
+      </li>
+    {{/each}}
+  </ul>
+  {{#link-to 'new_task'}}New task{{/link-to}}
+</div>
+<div class="col-md-4">
+  {{outlet}}
+</div>
