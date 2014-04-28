@@ -1,7 +1,7 @@
 <h1>Tasks</h1>
 
 <ul>
-  {{#each task in controller}}
+  {{#each task in controller itemController='task'}}
     <li>{{#link-to 'task' task}}{{task.name}}{{/link-to}}
       <button {{action deleteTask}}class="btn btn-danger btn-xs">Delete</button>
 
