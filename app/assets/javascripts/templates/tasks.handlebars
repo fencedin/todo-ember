@@ -2,7 +2,12 @@
 
 <ul>
   {{#each task in controller}}
-    <li>{{task.name}}</li>
+    <li>{{#link-to 'task' task}}{{task.name}}{{/link-to}}
+      <button {{action deleteTask}}class="btn btn-danger btn-xs">Delete</button>
+
+    </li>
   {{/each}}
 
 </ul>
+
+{{#link-to 'new_task'}}New task{{/link-to}}

@@ -1,0 +1,11 @@
+<h1>New task</h1>
+
+<form>
+  <div class="form-group">
+    <label for="name">Name</label>
+    {{input type="text" id="name" class="form-control" value=name}}
+  </div>
+  <button {{action createTask}} class="btn btn-primary">Create task</button>
+</form>
+
+<p>{{name}}</p>
