@@ -1,6 +1,18 @@
 <h1>{{name}}</h1>
 <p>Done? {{done}}</p>
-<p>List? {{list_id}}</p>
 
-<p>{{#link-to 'edit_task' this class="btn btn-info"}}Edit{{/link-to}}
-{{#link-to 'tasks' class="btn btn-primary"}}Hide{{/link-to}}</p>
+<p>
+  {{#link-to 'edit_task' this class="btn btn-info"}}
+    Edit
+  {{/link-to}}
+  {{#link-to 'tasks' class="btn btn-primary"}}
+    Hide
+  {{/link-to}}
+  {{#link-to 'tasks'}}
+    <button {{action deleteTask}}
+            class="btn btn-danger">
+            Delete
+    </button>
+  {{/link-to}}
+</p>
+

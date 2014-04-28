@@ -2,12 +2,7 @@
   <h1>Tasks</h1>
   <ul>
     {{#each task in controller itemController='task'}}
-      <li>{{#link-to 'task' task}}{{task.name}}{{/link-to}}
-        <span {{action deleteTask}}
-                  class="text-danger">
-                  Delete
-        </span>
-      </li>
+      <li>{{#link-to 'task' task}}{{task.name}}{{/link-to}}</li>
     {{/each}}
   </ul>
   {{#link-to 'new_task' class="btn btn-primary"}}New task{{/link-to}}
