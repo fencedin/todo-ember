@@ -9,7 +9,6 @@ ToDo.NewTaskController = Ember.ObjectController.extend({
         controller.transitionToRoute('task', model);
       })
       .catch(function() {
-        alert("Please fix")
       });
     }
   }
