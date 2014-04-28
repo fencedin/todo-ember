@@ -3,14 +3,14 @@
   <ul>
     {{#each task in controller itemController='task'}}
       <li>{{#link-to 'task' task}}{{task.name}}{{/link-to}}
-        <button {{action deleteTask}}
-                  class="btn btn-danger btn-xs">
+        <span {{action deleteTask}}
+                  class="text-danger">
                   Delete
-        </button>
+        </span>
       </li>
     {{/each}}
   </ul>
-  {{#link-to 'new_task'}}New task{{/link-to}}
+  {{#link-to 'new_task' class="btn btn-primary"}}New task{{/link-to}}
 </div>
 <div class="col-md-4">
   {{outlet}}
