@@ -1,6 +1,8 @@
 class TasksController < ApplicationController
   def index
-    @tasks = Task.all
+    @tasks = Task.all.order(:created_at)
+    @done_tasks = Task.where(done: true).order(:created_at)
+
     render json: @tasks
   end
 

@@ -1,5 +1,6 @@
 <div class="col-md-8">
   <h1>Tasks</h1>
+
   <ul>
     {{#each task in controller itemController='task'}}
       <li>{{input type="checkbox" class="toggle" checked=done}}
@@ -7,7 +8,10 @@
       </li>
     {{/each}}
   </ul>
+
   {{#link-to 'new_task' class="btn btn-primary"}}New task{{/link-to}}
+  {{#link-to 'tasks.done_tasks' class="btn btn-success"}}Done tasks{{/link-to}}
+
 </div>
 <div class="col-md-4">
   {{outlet}}
