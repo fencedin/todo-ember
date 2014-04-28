@@ -12,4 +12,4 @@ ToDo.EditTaskController = Ember.ObjectController.extend({
       });
     }
   }
-})
+});
