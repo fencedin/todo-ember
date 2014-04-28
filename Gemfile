@@ -8,7 +8,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'ember-rails'
 gem 'ember-data-source', '~> 1.0.0.beta.7'
-gem 'bootstrap'
+gem 'bootstrap-sass'
 
 group :development do
   gem 'better_errors'
