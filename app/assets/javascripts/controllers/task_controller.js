@@ -8,7 +8,6 @@ ToDo.TaskController = Ember.ObjectController.extend({
   },
   done: function(key, value) {
     var model = this.get('model');
-    console.debug(value);
     if (value === undefined) {
       return model.get('done');
     } else {
