@@ -1,28 +1,14 @@
-== README
+== To Do List
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Epicodus assignment
 
-Things you may want to cover:
+Create a to do list
 
-* Ruby version
+Get familiar with Ember.js
 
-* System dependencies
+future considerations
+#In the Ember.js Getting Started guide, they build a standalone app without Rails, which is a good exercise. When you're done, build a Rails API app, and then switch from using the Fixture Adapter to using the Active Model REST adapter, so that the app can save its data to your Rails API backend.
 
-* Configuration
+#You'll probably want to add authentication to your apps before long. Ember unfortunately doesn't have a standard way to handle auth, but the most common is to use an auth token in your request headers. This most popular plugin for this approach is Ember.SimpleAuth. They have a nice version that is compatible with Devise, but it requires some modifications to Devise. The README si pretty incomplete, so I opened a pull request with a better walk-through; until it's merged, you can check it out on my fork.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+#Finally, we haven't really talked about testing. The simplest thing to do is to continue testing your app with Capybara and Poltergeist, and that's the approach we'll take for now.
